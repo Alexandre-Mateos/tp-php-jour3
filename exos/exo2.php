@@ -10,11 +10,15 @@
 <body>
       <?php if((isset($_GET['a']) && strlen($_GET['a']))
             && (isset($_GET['b'])) && strlen($_GET['b'])) : ?>
+
             <p> Nombre 1 : <?php echo ($_GET['a']) ?></p>
             <p> Nombre 2 : <?php echo ($_GET['b']) ?></p>
             <p> Somme : <?php echo ($_GET['a'])+($_GET['b']) ?></p>
+
       <?php else : ?>
+
             <p> Somme impossible il manque une donnée</p>
+      
       <?php endif ?>
 </body>
 </html>
